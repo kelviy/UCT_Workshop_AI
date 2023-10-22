@@ -39,8 +39,8 @@ def record_text():
         except sr.UnknownValueError:
             print("Unknown error occured")
 
-
-def send_toLLM(messages, model="gpt-3.5-turbo"):
+# "gpt-3.5-turbo"
+def send_toLLM(messages, model="gpt-4"):
     response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
